@@ -19,14 +19,12 @@
   },
   "homepage": "https://github.com/oturnermajor/hapi-handlebars-boilerplate#readme",
   "dependencies": {
-    "babel-eslint": "^5.0.0",
     "handlebars": "^4.0.5",
     "hapi": "^13.2.1",
     "inert": "^3.2.0",
     "vision": "^4.0.1"
   },
   "devDependencies": {
-    "babel-eslint": "^5.0.0",
     "tape": "^4.5.1"
   }
 }

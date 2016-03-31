@@ -7,20 +7,20 @@ tape('check that tests work!', (t) => {
 });
 
 tape('check that server loads css', (t) => {
-	server.init.inject({ method: 'GET', url: '/style.css' }, (response) => {
+	server.inject({ method: 'GET', url: '/style.css' }, (response) => {
 		t.ok(response.payload.indexOf('}') > -1, 'css loads properly');
 		t.end();
 	});
 });
 
 tape('check that server loads client side js', (t) => {
-	server.init.inject({ method: 'GET', url: '/script.js' }, (response) => {
+	server.inject({ method: 'GET', url: '/script.js' }, (response) => {
 		t.ok(response.payload.indexOf('function') > -1, 'client side js loads properly');
 		t.end();
 	});
 });
 
 tape('teardown', (t) => {
-	server.init.stop();
+	server.stop();
 	t.end();
 });

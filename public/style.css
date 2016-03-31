@@ -3,7 +3,6 @@ body {
 }
 
 body * {
-    /*border: 1px solid red;*/
     font-family: 'Lato', sans-serif;
 }
 
@@ -56,10 +55,14 @@ a:hover {
     color: #D3D3D3;
 }
 
-/* ---------- HOME PAGE CONTENT ---------------*/
+/* ----------FOOTER -----------*/
 
-h1 {
-    font-size: 2em;
-    font-weight: 400;
+footer {
+    background-color: #9fa8a3;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     text-align: center;
+    height: 4em;
 }

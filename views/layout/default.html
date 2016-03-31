@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>title set in vews/layout/default.html</title>
+        <title>title in views/layout/default.html</title>
         <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="../style.css" type='text/css'>
         <script src="{{link}}"></script>
@@ -11,6 +11,7 @@
     <div class="site-container">
       {{> navbar}}
       {{{content}}}
+      {{> footer}}
     </div>
   </body>
 </html>
