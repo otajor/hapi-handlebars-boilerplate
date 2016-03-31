@@ -8,9 +8,13 @@ Easily customisable template for a Node server using hapi with handlebars.js tem
 4. Visit `localhost:4000` on your browser to view the website - woo!
 
 ## Further Instructions
-* The server already has a home route and a resource handler. The default HTML for all pages is specified in `views/layout/default.html` and includes the navbar and footer which are in `views/partials`. Minimal CSS, an empty script.js file, and a folder for assets are in `public`. A test file with three passing tests is in `tests`
+* Where Stuff Is:
+ * The server already has a home route and a resource handler. 
+ * The default HTML for all pages is specified in `views/layout/default.html` and includes the navbar and footer which are in `views/partials`. 
+ * Minimal CSS, an empty script.js file, and a folder for assets are in `public`. 
+ * A test file with three passing tests is in `tests`
 * To add new routes to the server: 
-  1. Make a new js file in the `routes` folder, e.g. `blog.js`. This should be in the same form as the `home.js` and `resources.js` files, i.e. an exported object including a method, path, and handler function: 
+ * Make a new js file in the `routes` folder, e.g. `blog.js`. This should be in the same form as the `home.js` and `resources.js` files, i.e. an exported object including a method, path, and handler function: 
   ```javascript
   module.exports = {
     method: 'GET',
@@ -20,7 +24,7 @@ Easily customisable template for a Node server using hapi with handlebars.js tem
     }
   };
   ```
-  2. Add the new route to ther server by adding its file path to the list of routes at line 26, e.g.
+  * Add the new route to ther server by adding its file path to the list of routes at line 26, e.g.
   ```javascript
   server.route([
     './routes/home.js',
