@@ -1,0 +1,65 @@
+body {
+    background-color: #c5d5cb;
+}
+
+body * {
+    /*border: 1px solid red;*/
+    font-family: 'Lato', sans-serif;
+}
+
+/* ----------NAV BAR ---------------*/
+
+.navbar {
+    background-color:#9fa8a3;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.navbar img {
+    width: 3%;
+    transform: translateY(20%);
+}
+
+.navbar img:hover {
+    -webkit-filter: brightness(75%);
+    filter: brightness(75%);
+}
+
+#linkedin {
+    padding-left: 1%;
+}
+
+ul {
+    padding: .5% 0 1% 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;
+    padding: 0 2.5% 0 2.5%;
+    font-family: 'Lato', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;;
+    display: inline;
+}
+
+a:hover {
+    color: #D3D3D3;
+}
+
+/* ---------- HOME PAGE CONTENT ---------------*/
+
+h1 {
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+}
